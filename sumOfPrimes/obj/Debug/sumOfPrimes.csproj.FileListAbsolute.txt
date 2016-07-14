@@ -1,0 +1,6 @@
+c:\users\wecancodeit\documents\visual studio 2015\Projects\sumOfPrimes\sumOfPrimes\bin\Debug\sumOfPrimes.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\sumOfPrimes\sumOfPrimes\bin\Debug\sumOfPrimes.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\sumOfPrimes\sumOfPrimes\bin\Debug\sumOfPrimes.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\sumOfPrimes\sumOfPrimes\obj\Debug\sumOfPrimes.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\sumOfPrimes\sumOfPrimes\obj\Debug\sumOfPrimes.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\sumOfPrimes\sumOfPrimes\obj\Debug\sumOfPrimes.pdb
