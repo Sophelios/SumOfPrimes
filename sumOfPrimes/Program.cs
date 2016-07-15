@@ -8,62 +8,62 @@ namespace sumOfPrimes
 {
     class Program
     {
-        static int CheckPrime(int primeCheck)
+        static bool CheckPrime(int primeCheck)
         {
-            int s = 7;
+            if (primeCheck == 2)
+            {
+                return true;
+            }
+            if (primeCheck == 0 || primeCheck == 1)
+            {
+                return false;
+            }
+
             for (int i = 2; i < primeCheck; i++)
             {
                 
-                if (primeCheck == 2)
+                
+                if (primeCheck % i == 0)
                 {
-                     s=1;
+                    return false;
                 }
-                else if (primeCheck == 0 || primeCheck == 1)
+                else if (i == primeCheck-1)
                 {
-                    s=2;
-                }
-                else if (primeCheck % i == 0)
-                {
-                    s=3;
+                    return true;
                 }
                 else
                 {
-                    s=4;
+
                 }
                 
                 
             }
-            return s;
+            return false;
         }
         static void Main(string[] args)
         {
-            int final = 2;
-            int result = CheckPrime(final);
-            //int counter = 0;
-            //for (int i = 0; i<5 ; i++)
-            //{
-            //    result = CheckPrime(i);
-            //    if (result == 0)
-            //    {
-            //        //final += i;
-            //        //counter++;
-            //    }
-            //    else if (result==1)
-            //    {
-            //        final += i;
-            //        counter++;
-            //        //Console.WriteLine(final);
-            //    }
-            //    else
-            //    {
+            int final = 0;
+            bool result = false;
+            int counter = 0;
+            for (int i = 0;; i++)
+            {
+                result = CheckPrime(i);
+                if (result == false)
+                {
 
-            //    }
-            //    if (counter == 1000)
-            //    {
-            //        break;
-            //    }
-            //}
-            Console.WriteLine(result);
+                }
+                else
+                {
+                    final += i;
+                    counter++;
+                }
+                
+                if (counter == 1000)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine(final);
         }
     }
 }
